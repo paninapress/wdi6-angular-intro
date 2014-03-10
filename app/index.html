@@ -38,7 +38,7 @@
   <div ng-model="students">
     <ul>
       <span ng-repeat="name in students | filter:query ">
-        <li>{{ name }}
+        <li>{{ name }} <button ng-click="remove(name)">Delete</button></li>
       </span>
     </ul>
   </div>
